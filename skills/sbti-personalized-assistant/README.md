@@ -24,28 +24,42 @@
 
 ## 🚀 快速开始
 
-### 前置要求
+### 🎯 方式一：一句话安装（推荐）
+
+如果你使用 **OpenClaw**，直接对你的 Agent 说：
+
+```
+帮我安装 https://github.com/lvjin12321/STH_Fun/tree/main/skills/sbti-personalized-assistant 这个 skill
+```
+
+Agent 会自动下载并部署，无需手动操作！
+
+---
+
+### 方式二：手动安装
+
+#### 前置要求
 
 - **OpenClaw** 或兼容的 AI Agent 框架
 - **Python 3.8+** (用于人格计算脚本)
 - **消息读取权限** (用于分析聊天记录)
 
-### 安装步骤
+#### 安装步骤
 
-#### 1. 克隆或下载仓库
+**1. 克隆或下载仓库**
 
 ```bash
 git clone https://github.com/lvjin12321/STH_Fun.git
 cd STH_Fun/skills/sbti-personalized-assistant
 ```
 
-#### 2. 安装依赖
+**2. 安装依赖**
 
 ```bash
 pip install pyyaml requests
 ```
 
-#### 3. 部署到 OpenClaw
+**3. 部署到 OpenClaw**
 
 将 `skills/sbti-personalized-assistant` 目录放入 OpenClaw 的 `skills` 文件夹：
 
@@ -54,7 +68,7 @@ pip install pyyaml requests
 cp -r skills/sbti-personalized-assistant ~/.openclaw/skills/
 ```
 
-#### 4. 重启 OpenClaw
+**4. 重启 OpenClaw**
 
 ```bash
 openclaw restart
